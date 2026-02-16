@@ -1,0 +1,5 @@
+at first 
+npm init -y
+remove :-  "type": "commonjs"
+make in
+    "dev":"tsx watch ./src/server.ts",
