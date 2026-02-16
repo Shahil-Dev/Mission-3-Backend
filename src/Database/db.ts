@@ -18,4 +18,4 @@ export  const initDB = async () => {
     console.log("database connected")
 }
 
-initDB();
+// initDB();
