@@ -7,16 +7,16 @@ const loginUser = async (req: Request, res: Response) => {
         return res.status(201).json({
             success: true,
             message: "User logged in successfully",
-            data: result.rows[0]
+            data: result
         });
     }
-    catch (error) {
-        return res.status(500).json({
+    catch (error: any) {
+        return res.status(400).json({
             success: false,
-            message: "Failed to create user",
-            error: error
+            message: error.message
         });
     }
+
 }
 
 
